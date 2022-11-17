@@ -1,0 +1,398 @@
+*{
+    margin: 0em;
+    padding: 0em;
+    box-sizing: border-box;
+}
+
+#contenedor
+{
+    border: 500px;
+    padding: 55px;
+    top: 300px;
+    margin: 0 auto;
+}
+
+
+#cabeza{
+    width: 1400px;
+    height: 150px;
+    background: #E168FF;
+}  
+
+#menu {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+#hea {
+
+    background: #EAAFFE;
+    clear: both;
+    content: '';
+    display: table;
+
+}
+
+.tete {
+     float: left;
+}
+
+.tete ul li {
+      list-style: none;
+      margin-left: 35px;
+      float: left;
+      padding: 30px 0; 
+      position: relative;
+
+}
+
+.tete ul li a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      letter-spacing: 7px;
+
+}
+
+.tete ul li a::before {
+      display: block;
+      content: '';
+      width: 0%;
+      background: purple;
+      height: 5px;
+      top: 0;
+      position: absolute;
+      transition: width 0.2s;
+
+}
+
+.tete ul li a:hover::before{
+      width: 100%;
+}
+
+
+.tutu {
+     float: left;
+}
+
+.tutu ul li {
+      list-style: none;
+      margin-right: 10px;
+      float: right;
+      padding: 38px 0;
+  }
+
+#areaprincipal {
+    width: 1400px; 
+    height: 13800px;
+    background: #F8E4FE;
+}
+
+#areaprincipal2 {
+    width: 1400px; 
+    height: 5860px;
+    background: #F8E4FE;
+               }
+
+#areaprincipal3 {
+    width: 1400px; 
+    height: 9100px;
+    background: #F8E4FE;
+               }
+
+#areaprincipal4 {
+                  width: 1400px; 
+                  height: 11040px;
+                  background: #F8E4FE;
+                }
+
+#areaprincipal5 {
+                  width: 1400px; 
+                  height: 1200px;
+                  background: #F8E4FE;
+                }
+
+#areaprincipal6 {
+                  width: 1400px; 
+                  height: 11450px;
+                  background: #F8E4FE;
+                }
+
+#areaprincipal7 {
+                  width: 1400px; 
+                  height: 7500px;
+                  background: #F8E4FE;
+                }
+
+#areaprincipal8 {
+                  width: 1400px; 
+                  height: 7500px;
+                  background: #F8E4FE;
+                }
+
+#areaprincipal9 {
+                  width: 1400px; 
+                  height: 17300px;
+                  background: #F8E4FE;
+                }
+
+#areaprincipal10 {
+                  width: 1400px; 
+                  height: 5500px;
+                  background: #F8E4FE;
+                }
+
+#areaprincipal11 {
+                  width: 1400px; 
+                  height: 2000px;
+                  background: #F8E4FE;
+                }
+
+#areaprincipal12 {
+                  width: 1400px; 
+                  height: 7800px;
+                  background: #F8E4FE;
+                }
+
+#areaprincipal13 {
+                  width: 1400px; 
+                  height: 2500px;
+                  background: #F8E4FE;
+                }
+
+
+
+#pie{
+    width: 1400px;
+    height: 100px;
+    background: #E168FF;
+}
+
+
+#
+{
+    border: 5px solid purple;
+    margin:  8px;
+    padding: 20px;
+    background-color: white;
+    font-family: comic sans;
+    color: black;
+}
+
+.container, .button, .nav{
+    position: absolute;
+    top: 10%;
+    left: 10px;
+}
+
+.container{
+    margin: auto;
+    top: 23%;
+    left: 80%;
+    margin-left: 135px;
+}
+
+#toggle{
+    display: none;
+}
+
+.button{
+    z-index: 999;
+    width: 43px;
+    height: 43px;
+    top: 65px;
+    background: #7B00A6;
+    border-radius: 100%;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 1px 3px 10px 0 rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+.button:before{
+    position: absolute;
+    top: 20px;
+    left: 9px;
+    content: '';
+    width: 25px;
+    height: 2px;
+    background: #fff;
+    transform: rotate(90deg);
+}
+
+.button:after{
+    position: absolute;
+    top: 20px; 
+    left: 9px;
+    content:'';  
+    width: 25px;
+    height: 2px;
+    background: #fff;  
+}
+
+.nav{
+    transform: translate(-10%);
+    opacity: 0;
+    top: 70px;
+    left: 1px;
+    transition: all 0.5s ease-in-out;
+    background: white;
+    width: 150px;
+    border-radius: 5px;
+    transform: translateY(0%);
+    box-shadow: 2px 3px 10px 0 rgba(0,0,0,0.1);
+}
+
+.nav a{
+    text-align: center;
+    display: block;
+    margin: 20px 0;
+    color: #C62DFB;
+    text-decoration: none;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#toggle:checked ~ .nav{
+    opacity: 1;
+    transform: translateY(10%);
+}
+
+#toggle:checked ~ .button{
+    transform: rotate(135deg);
+    box-shadow: 0 0 0 0 transparent;
+
+}
+
+
+.caja1{
+    background-color: #FFC3F6 ;
+    width: 1000px;
+    height: 2560px;
+    position: relative;
+    left: 13%;
+}
+
+.caja2{
+    background-color: #FFC3F6 ;
+    width: 1000px;
+    height: 1290px;
+    center: 50%;
+    position: relative;
+    left: 13%;
+}
+
+.caja3{
+    background-color: #FFC3F6 ;
+    width: 1000px;
+    height: 3500px;
+    center: 50%;
+    position: relative;
+    left: 13%;
+}
+
+.caja4{
+    background-color: #FFC3F6 ;
+    width: 1000px;
+    height: 2250px;
+    center: 50%;
+    position: relative;
+    left: 13%;
+}
+.caja5{
+    background-color: #FFC3F6 ;
+    width: 1000px;
+    height: 2890px;
+    center: 50%;
+    position: relative;
+    left: 13%;
+}
+
+.caja6{
+    background-color: #FFC3F6 ;
+    width: 1000px;
+    height: 2300px;
+    center: 50%;
+    position: relative;
+    left: 13%;
+}
+
+.caja7{
+    background-color: #FFC3F6 ;
+    width: 1000px;
+    height: 900px;
+    center: 50%;
+    position: relative;
+    left: 13%;
+}
+
+.caja8{
+    background-color: #FFC3F6 ;
+    width: 1000px;
+    height: 800px;
+    center: 50%;
+    position: relative;
+    left: 13%;
+}
+
+.caja9{
+    background-color: #FFC3F6 ;
+    width: 1000px;
+    height: 770px;
+    center: 50%;
+    position: relative;
+    left: 13%;
+}
+
+.caja10{
+    background-color: #FFC3F6 ;
+    width: 1000px;
+    height: 630px;
+    center: 50%;
+    position: relative;
+    left: 13%;
+}
+
+.caja11{
+    background-color: #FFC3F6 ;
+    width: 1000px;
+    height: 550px;
+    center: 50%;
+    position: relative;
+    left: 13%;
+}
+
+.caja12{
+    background-color: #FFC3F6 ;
+    width: 1000px;
+    height: 550px;
+    center: 50%;
+    position: relative;
+    left: 13%;
+}
+
+.caja13{
+    background-color: #FFC3F6 ;
+    width: 1000px;
+    height: 550px;
+    center: 50%;
+    position: relative;
+    left: 13%;
+}
+
+
+.foto1 {   
+    float: left; 
+    width: 75px; 
+    height: 80;
+    padding: 8px 0;
+}
+
+
+
+
+
+
+
+
+
